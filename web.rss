@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss>
+	<channel>
+    <title>Incio</title>
+    <link>https://torofant.github.io/</link>
+    <description>Campos de Fútbol en la Comunidad Valenciana</description>
+		<item>
+			<title>Estadios</title>
+			<link>https://torofant.github.io/estadios.html</link>
+			<description>Visualiza en detalle datos sobre todos los campos de fútbol</description>
+		</item>
+    <item>
+			<title>Contacto</title>
+			<link>https://torofant.github.io/contacto.html</link>
+			<description>Contacta para obtener más información sobre las visitas guiadas</description>
+		</item>
+	</channel>
+</rss>
