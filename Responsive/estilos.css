@@ -1,0 +1,160 @@
+/* Reset y estilos base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+}
+
+/* Viewport para responsive */
+html {
+    font-size: 16px;
+}
+
+/* Header */
+header {
+    border-bottom: 1px solid;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Enlaces */
+a {
+    color: #be04048c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #be040448;
+}
+
+/* Menú Vertical Responsive */
+.menuvertical {
+    width: 100%;
+    background-color: rgb(77, 76, 76);
+}
+
+.menuvertical ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuvertical li a {
+    display: block;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.menuvertical li a:hover {
+    background-color: #333;
+}
+
+/* Contenido principal */
+#estadios {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#estadios h2 {
+    margin: 1.5rem 0 1rem;
+}
+
+#estadios img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+}
+
+#estadios dl {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 8px;
+}
+
+#estadios dt {
+    text-decoration: underline;
+    font-size: 1.125rem;
+    margin-top: 0.5rem;
+}
+
+#estadios dd {
+    font-style: italic;
+    margin-left: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.botones {
+    padding: 0.75rem 1.5rem;
+    background-color: #b3003c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.botones:hover {
+    background-color: #333;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .menuvertical ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .menuvertical li {
+        flex: 1;
+        max-width: 200px;
+    }
+    
+    #estadios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    #estadios h2 {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 992px) {
+    #estadios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #estadios h2 {
+        grid-column: span 3;
+    }
+    
+    header {
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    #estadios {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    #estadios h2 {
+        grid-column: span 4;
+    }
+}
